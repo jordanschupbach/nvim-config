@@ -1,0 +1,10 @@
+std = "neovim"
+
+[lints]
+undefined_variable = "allow"
+unscoped_variables = "allow"
+undefined_field = "allow"
+
+[rules]
+global_usage = "allow"
+multiple_statements = "allow"

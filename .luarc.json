@@ -1,0 +1,33 @@
+{
+    "runtime.version": "LuaJIT",
+    "diagnostics": {
+        "enable": true,
+        "globals": [
+          "vim",
+          "describe",
+          "pending",
+          "it",
+          "before_each",
+          "after_each",
+          "setup",
+          "teardown",
+          "finally",
+          "lfs"
+        ],
+        "disable": [
+                "lowercase-global",
+                "trailing-space",
+                "missing-parameter",
+            ],
+    },
+    "workspace": {
+        "library": [
+            "runtime/lua",
+            "${3rd}/lfs/library"
+        ],
+        "checkThirdParty": false,
+        "maxPreload": 2000,
+        "preloadFileSize": 1000
+    },
+    "telemetry.enable": false
+}
